@@ -1,0 +1,318 @@
+@media (max-width: 480px)  {
+    main, body, div, section { 
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    main{
+        /* background-color: blue; */
+    }
+    nav{
+        grid-template-columns: 1fr 1fr; /* Make it a single column */
+        grid-gap: 5px; /* Adjust gap if necessary */
+        max-height: none; /* Allow height to adjust based on content */
+    }
+    nav > .logo > span > a{
+        font-size: 20px;
+    }
+    .navlists > ul > li > a{
+        display: none;
+    }
+    .toggle_btn > i{
+        padding-right: 30px;
+        font-size: 1.5rem;
+        display: block;
+    }
+    .toggle_btn{
+        margin-top: -18px;
+        display: block;
+    }
+    .heroSection{
+        grid-template-columns: 1fr; /* Make it a single column */
+        grid-gap: 5px; /* Adjust gap if necessary */
+        max-height: none; /* Allow height to adjust based on content */
+    }
+    .hero2{
+        display: none !important;
+    }
+    .cardDiv{
+        grid-template-columns: 1fr; /* Make it a single column */
+        grid-gap:  5px;
+        padding: 10px;
+    }
+    .card{
+        margin: auto;
+        margin-top: 30px;
+    }
+    .mission{
+        margin-bottom: 400px;
+
+    }
+    .faqDiv{
+        grid-template-columns: 1fr; /* Make it a single column */
+        grid-gap: 5px; /* Adjust gap if necessary */
+    }
+    .faqDiv1{
+        display: none;
+    }
+    .faqDiv2{
+        margin-top: -80px;
+    }
+    .faqSection{
+        /* margin-bottom: -90px; */
+    }
+    footer{
+        min-height: 2000px;;
+    }
+    .footer{
+        grid-template-columns: 1fr; /* Make it a single column */
+        grid-gap:  5px;
+        padding: 10px;
+
+    }
+    .email_suscribe > form > input{
+        margin-bottom: 10px;
+    }
+    .media__icons{
+        border: 1px solid red;
+        align-items: center;
+
+    }
+    .footer__container{
+        grid-template-columns: 1fr; /* Make it a single column */
+        grid-gap:  5px;
+        padding: 10px;
+    }
+    .icons{
+        grid-template-columns: 1fr; /* Make it a single column */
+        grid-gap:  5px;
+        padding: 10px;
+        margin-top: 740px;
+    }
+    .disappear{
+        display: none;
+    }
+}
+/*  */
+@media (min-width: 480px) and (max-width: 690px) {
+    main, body, div, section { 
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    div, main{
+        /* border: 1px solid red; */
+    }
+    main{
+        width: 100%;
+    }
+    body{
+        background-color: black;
+    }
+    nav{
+        grid-template-columns: 1fr 1fr; /* Make it a single column */
+        grid-gap: 5px; /* Adjust gap if necessary */
+        max-height: none; /* Allow height to adjust based on content */
+    }
+    nav > .logo > span > a{
+        font-size: 20px;
+    }
+    .navlists > ul > li > a{
+        display: none;
+    }
+    .disappear{
+        border: 1px solid rgb(30, 191, 255);
+        display: none;
+    }
+    .toggle_btn > i{
+        padding-right: 30px;
+        font-size: 1.5rem;
+        display: block;
+    }
+    .toggle_btn{
+        margin-top: -18px;
+        display: block;
+    }
+    .heroSection{
+        grid-template-columns: 1fr; /* Make it a single column */
+        grid-gap: 5px; /* Adjust gap if necessary */
+        max-height: none; /* Allow height to adjust based on content */
+    }
+    .hero2{
+        display: none !important;
+    }
+    .cardDiv{
+        grid-template-columns: 1fr; /* Make it a single column */
+        grid-gap:  5px;
+        padding: 10px;
+    }
+    .card{
+        margin: auto;
+        margin-top: 30px;
+    }
+    .mission{
+        margin-bottom: 250px;
+
+    }
+    .faqDiv{
+        grid-template-columns: 1fr; /* Make it a single column */
+        grid-gap: 5px; /* Adjust gap if necessary */
+    }
+    .faqDiv1{
+        display: none;
+    }
+    .faqDiv2{
+        margin-top: -80px;
+    }
+    .footer{
+        grid-template-columns: 1fr; /* Make it a single column */
+        grid-gap:  5px;
+        padding: 10px;
+
+    }
+    .icons{
+        grid-template-columns: 1fr; /* Make it a single column */
+        grid-gap:  5px;
+        padding: 10px;
+        margin-top: 800px;
+    }
+    .disappear{
+        display: none;
+    }
+    .footer__container{
+        grid-template-columns: 1fr; /* Make it a single column */
+        grid-gap:  5px;
+        padding: 10px;
+    }
+}
+
+
+
+
+@media (min-width:690px) and (max-width: 915px) {
+    main, body, div, section { 
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    div, main{
+        /* border: 1px solid red; */
+    }
+    main{
+        width: 100%;
+    }
+    body{
+        background-color: black;
+    }
+    nav{
+        grid-template-columns: 1fr 1fr; /* Make it a single column */
+        grid-gap: 5px; /* Adjust gap if necessary */
+        max-height: none; /* Allow height to adjust based on content */
+    }
+    nav > .logo > span > a{
+        font-size: 20px;
+    }
+    .navlists > ul > li > a{
+        display: none;
+    }
+    .disappear{
+        border: 1px solid rgb(30, 191, 255);
+        display: none;
+    }
+    .toggle_btn > i{
+        padding-right: 30px;
+        font-size: 1.5rem;
+        display: block;
+    }
+    .toggle_btn{
+        margin-top: -18px;
+        display: block;
+    }
+    .heroSection{
+        grid-template-columns: 1fr; /* Make it a single column */
+        grid-gap: 5px; /* Adjust gap if necessary */
+        max-height: none; /* Allow height to adjust based on content */
+    }
+    .hero2{
+        display: none !important;
+    }
+    .cardDiv{
+        grid-template-columns: 1fr; /* Make it a single column */
+        grid-gap:  5px;
+        padding: 10px;
+    }
+    .card{
+        margin: auto;
+        margin-top: 30px;
+    }
+    .mission{
+        margin-bottom: 250px;
+
+    }
+    .faqDiv{
+        grid-template-columns: 1fr; /* Make it a single column */
+        grid-gap: 5px; /* Adjust gap if necessary */
+    }
+    .faqDiv1{
+        display: none;
+    }
+    .faqDiv2{
+        margin-top: -80px;
+    }
+    .footer{
+        grid-template-columns: 1fr; /* Make it a single column */
+        grid-gap:  5px;
+        padding: 10px;
+
+    }
+    .icons{
+        grid-template-columns: 1fr; /* Make it a single column */
+        grid-gap:  5px;
+        padding: 10px;
+        margin-top: 800px;
+    }
+    .disappear{
+        display: none;
+    }
+    .footer__container{
+        grid-template-columns: 1fr; /* Make it a single column */
+        grid-gap:  5px;
+        padding: 10px;
+    }
+}
+
+@media (min-width:915px) and (max-width: 1010px) {
+    main{
+        width: 100%;
+    }
+    body{
+        background-color: black;
+    }
+    nav{
+        grid-template-columns: 1fr 1fr; /* Make it a single column */
+        grid-gap: 5px; /* Adjust gap if necessary */
+        max-height: none; /* Allow height to adjust based on content */
+    }
+    nav > .logo > span > a{
+        font-size: 20px;
+    }
+    .navlists > ul > li > a{
+        display: none;
+    }
+    .disappear{
+        border: 1px solid rgb(30, 191, 255);
+        display: none;
+    }
+    .toggle_btn > i{
+        padding-right: 30px;
+        font-size: 1.5rem;
+        display: block;
+    }
+    .toggle_btn{
+        margin-top: -18px;
+        display: block;
+    }
+  }
+
+  

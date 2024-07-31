@@ -1,0 +1,55 @@
+.meet__container{
+  /* background-color: rgb(250, 154, 255); */
+  height: auto;
+  width: 90%;
+  margin: auto;
+  
+}
+.profileImage{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 10px;
+  padding: 10px;
+  border: 3px solid black;
+  box-shadow: 12px 12px 0 blueviolet;
+  margin-bottom: 20px;
+
+}
+.image{
+  height: 300px;
+  width: 250px;
+  /* border: 1px solid red; */
+  border-radius: 3px;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image img{
+  width: 100%; /* Make the image take up the full width of the div */
+  height: auto; /* Maintain the aspect ratio */
+}
+.profile{
+  /* border: 1px solid red; */
+  /* background-color: aliceblue; */
+  padding: 15px;
+}
+.profile p{
+  font-size: 20px;
+}
+@media (max-width: 850px)  {
+  .profileImage{
+      grid-template-columns: 1fr; /* Make it a single column */
+      grid-gap: 5px; /* Adjust gap if necessary */
+      max-height: none;
+  }
+}
+@media (min-width:915px) and (max-width: 1010px) {
+  .meet{
+    width: 100%;
+  }
+  .meet__container{
+    width: 100%;
+  }
+}

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dentist web Application</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/smallScreen.css"/>
+    <link rel="stylesheet" href="css/form.css"/>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "cSj9wDbnxrNpLpXaa",
+        });
+    })();
+</script>
+</head>
+    <body>
+        <main>
+            <header>
+                <div class="number">
+                    <p>
+                        New Patients welcome (236)660-9766
+                    </p>
+                </div>
+
+                <nav id="nav">
+                    <div class="logo">
+                        <span>
+                            <a href="index.html">
+                                RetroSmile.
+                            </a>
+                        </span>
+                    </div>
+                    <div class="disappear">
+                        
+                    </div>
+                    <div class="navlists">
+                        <ul>
+                            <li><a href="meet.html">OUR TEAM</a></li>
+                            <li><a href="#">NEW PATIENTS</a></li>
+                            <li><a href="#">SERVICES</a></li>
+                            <li><a href="#">GALLERY</a></li>
+                            <li><a href="#">FAQS</a></li>
+                            <li><a href="contact.html">CONTACTS</a></li>
+                        </ul>
+                        <div class = "toggle_btn">
+                            <i class="fa-solid fa-bars">
+                                
+                            </i>
+                        </div>
+                        <div class="dropdown">
+                            <ul>
+                                <li><a href="meet.html">OUR TEAM</a></li>
+                                <li><a href="#">NEW PATIENTS</a></li>
+                                <li><a href="#">SERVICES</a></li>
+                                <li><a href="#">GALLERY</a></li>
+                                <li><a href="#">FAQS</a></li>
+                                <li><a href="contact.html">CONTACTS</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <section class="book_form">
+                <div class="form_section">
+                    <div class="form1">
+                        
+                        <h2>Book an appointment!</h2>
+                        <form id="book_form">
+                            <div class="input-container ic1">
+                            <input id="firstname" class="input" name="fname" type="text" placeholder=" " />
+                            <div class="cut long"></div>
+                            <label for="fname" class="placeholder">First name</label>
+                            </div>
+
+                            <div class="input-container ic2">
+                            <input id="lastname" class="input" name="lname" type="text" placeholder=" " />
+                            <div class="cut"></div>
+                            <label for="lname" class="placeholder">Last name</label>
+                            </div>
+
+                            <div class="input-container ic2">
+                            <input id="email" class="input" name="email" type="text" placeholder=" " />
+                            <div class="cut cut-short"></div>
+                            <label for="email" class="placeholder">Email</>
+                            </div>
+
+                            <div class="input-container ic1">
+                                <input id="appointment_date" class="input" name="date" type="date" placeholder=" " />
+                                <div class="cut long"></div>
+                                <label for="date" class="placeholder">Date</label>
+                            </div>
+
+                            <div class="input-container ic1">
+                                <input id="time" class="input" name="time" type="time" placeholder=" " />
+                                <div class="cut long"></div>
+                                <label for="time" class="placeholder">Time</label>
+                            </div>
+
+                            <div class="input-container ic2">
+                                <input id="number" class="input" name="number" type="text" placeholder=" " />
+                                <div class="cut longer"></div>
+                                <label for="number" class="placeholder">Phone Number</label>
+                            </div>
+                            <button type="text" class="submit" id="book_button">submit</button>
+                        </form>
+                    </div>
+                    <div class="form2">
+                        <img src="img/Dentist.svg" alt="doctor">
+                    </div>
+                </div>
+                
+            </section>
+
+            <section class="cardSection">
+                <div class="mission">
+                    <h1>Our Mission</h1>
+                    <p>
+                        At RetroSmile Dental, our mission is to provide exceptional dental care with
+                         a personalized touch. We are dedicated to creating a comfortable and welcoming environment
+                          where each patient feels valued and cared for. Our team of skilled professionals utilizes
+                        the latest in dental technology to ensure optimal oral health and beautiful smiles. We believe
+                         in building lasting relationships with our patients through trust, compassion, and a commitment
+                        to excellence. Your smile is our passion, and we strive to make every visit a positive and
+                         rewarding experience. <br> - Ifeoluwa Managing Directior
+
+                    </p>
+                </div>
+            </section>
+
+
+
+
+            <section class="faqSection">
+                <h1>FREQUENTLY ASKED QUESTIONS</h1>
+                <div class="faqDiv">
+                    <div class="faqDiv1">
+                        <img src="img/7813893_3746213-removebg.png">
+                    </div>
+
+                    <div class="faqDiv2">
+                        
+                        <label for="touch1"><span class="span1 hover-effect1">How can I book an appointment?</span></label>               
+                        <input type="checkbox" id="touch1"> 
+                        <p class="slide1">
+                            Booking an appointment is easy!
+                            You can call us at [Your Phone Number] or use our online booking system.
+                            Simply click on the "Book Your Appointment" button on our website to get started.
+                        </p>
+
+                        <br>
+                        <br>
+
+                        <label for="touch2"><span class="span2">Do you accept insurance?</span></label>               
+                        <input type="checkbox" id="touch2"> 
+                        <p class="slide2">
+                            Yes, we accept most major insurance plans. 
+                            Please contact our office for more details about your specific insurance provider
+                            and coverage options.
+                        </p>
+
+                        <br>
+                        <br>
+
+                        <label for="touch3"><span class="span3">What should I expect during my first visit?</span></label>               
+                        <input type="checkbox" id="touch3"> 
+                        <p class="slide3">
+                            During your first visit, we will conduct a comprehensive dental examination,
+                            including x-rays if necessary. We will discuss your dental history, 
+                            any concerns you have, and create a personalized treatment plan to meet your needs.
+                        </p>
+
+                        <br>
+                        <br>
+
+                        <label for="touch4"><span class="span4">How often should I visit the dentist?</span></label>               
+                        <input type="checkbox" id="touch4"> 
+                        <p class="slide4">
+                            We recommend visiting the dentist every six months for a routine check-up and cleaning. 
+                            However, depending on your oral health, more frequent visits may be necessary.
+                            Our team will provide personalized recommendations based on your needs.
+                        </p>
+                    </div>  
+                </div>
+        
+                <!-- <div>
+                    <label for="touch"><span class="span">FAQS</span></label>               
+                    <input type="checkbox" id="touch"> 
+                    <p class="slide">
+                        Thank you JEsus!
+                    </p>
+                </div>  -->
+            </section>
+
+
+
+
+            <footer>
+                <div class="footer">
+                    <div class="email_suscribe">
+                        <h2>Subscribe to our newsletter</h2>
+                        
+                        <form id="sus_form">
+                            <input type="email" name="email" placeholder="Enter your email" class="email_input" id="email">
+                            <button type="submit" id="sus_button" >Subscribe</button>
+                        </form>
+                        <p>
+                            *By entering your email address, you agree to receive RetroSmile Dental,<br>
+                            promotions, other commercial messages. You can view our <a href="#">Privacy Policy<br> here </a>  
+                            and you may <a href="#">Unsuscribe</a> at any time.
+                        </p>
+                    </div>
+                    <div class="media__icons">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        
+                <div class="footer__container">
+                
+                    <div class="footer__column1">
+                        <h2>ADDRESS</h2>
+                        <P>RetroSmile Dental Group</P>
+                        <P>
+                            <span>
+                                <a href="https://maps.app.goo.gl/Mhss4wJCvn3DLAjc7">
+                                    700 Royal Avenue <br>
+                                    New Westminster, BC<br>
+                                    V3M 5Z5
+                                </a>    
+                            </span> 
+                        </P>
+                        <P>
+                            Phone: 236-660-9766
+                        </P>
+                    </div>
+                    <div class="footer__column2">
+                        <h2>OFFICE HOURS</h2>
+                        <p>Monday 7:30am-5:00pm</p>
+                        <p>Tuesday 7:30am-6:00pm</p>
+                        <p>Wednesday 7:30am-8:00pm</p>
+                        <p>Thursday 7:30am-8:00pm</p>
+                        <p>Friday 7:30am-5:00pm</p>
+                        <p>Saturday 8:00am-5:00pm</p>
+                    </div>
+                    <div class="footer__column3">
+                        <h2>QUICK LINKS</h2>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="meet.html">Meet Our Team</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Meet Our Team</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column4">
+                        <h2>MAPS</h2>
+                        <div class="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2606.841220606968!2d-122.91526432365555!3d49.20357157635319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485d871f5ee4dc9%3A0xf3a710065f3a2f3f!2sDouglas%20College%2C%20New%20Westminster%20Campus!5e0!3m2!1sen!2sca!4v1722289286200!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>   
+                        </div>
+                    
+                    </div>
+                </div>
+                <div class="icons">
+                    <div class="disappear">
+                        <!-- <span>
+                            <a href="#">
+                                RetroDent.
+                            </a>
+                        </span> -->
+                    </div>
+                    <div>
+                        <p>&copy; 2023 RetroSmile Dental Group. All rights reserved.</p>
+                    </div>
+                    <div class="disappear">
+                        <!-- <p>&copy; 2023 RetroSmile Dental Group. All rights reserved.</p> -->
+                    </div>
+                </div>
+            </footer>
+        </main>
+        
+        <!-- <script src="js/email.js"></script>
+        <script src="js/index.js"></script> -->
+        <script>
+            <!-- Makes Navbar Sticky -->
+            
+            window.onscroll = function() {myFunction()};
+
+            var navbar = document.getElementById("nav");
+            var sticky = navbar.offsetTop;
+
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+                } 
+                else {
+                navbar.classList.remove("sticky");
+                }
+            }
+
+            
+            
+
+            const toggleBtn = document.querySelector('.toggle_btn')
+            const toggleBtnIcon = document.querySelector('.toggle_btn i')
+            const dropDownMenu = document.querySelector('.dropdown')
+
+            toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+            }
+
+
+
+
+
+
+
+            const booking_btn = document.getElementById('book_button');
+            const booking_form = document.getElementById('book_form');
+
+            // Function to format the date
+            function formatDate(dateString) {
+                const date = new Date(dateString + "T00:00:00");
+
+                const weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+                const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+                const weekdayName = weekdays[date.getDay()];
+                const day = date.getDate();
+                const monthName = months[date.getMonth()];
+                const year = date.getFullYear();
+
+                function getDaySuffix(day) {
+                    if (day > 3 && day < 21) return 'th';
+                    switch (day % 10) {
+                        case 1: return 'st';
+                        case 2: return 'nd';
+                        case 3: return 'rd';
+                        default: return 'th';
+                    }
+                }
+                
+                const daySuffix = getDaySuffix(day);
+
+                return `${weekdayName}, ${day}${daySuffix} of ${monthName} ${year}`;
+            }
+
+            booking_form.addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                booking_btn.value = 'Sending...';
+
+
+                // Get the appointment date from the form
+                const appointmentDateInput = document.getElementById('appointment_date');
+                const formattedDate = formatDate(appointmentDateInput.value);
+                appointmentDateInput.type = 'text';
+                appointmentDateInput.value = formattedDate;
+                console.log("HIIIIIIII")
+
+                
+
+                const serviceID = 'service_so85fc4';
+                const templateID = 'template_g1kw3e4';
+
+                emailjs.sendForm(serviceID, templateID, booking_form)
+                
+                .then(() => {
+                    booking_btn.value = 'Send Email';
+                    alert('Sent!');
+                    booking_form.reset();
+                    appointmentDateInput.type = 'date';
+                    }, (err) => {
+                    booking_btn.value = 'Send Email';
+                    alert('Failed to send: ' + JSON.stringify(err));
+                });
+            });
+
+        </script>
+    </body>
+</html
