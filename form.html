@@ -91,7 +91,7 @@
                             </div>
 
                             <div class="input-container ic2">
-                            <input id="email" class="input" name="email" type="text" placeholder=" " />
+                            <input id="email" class="input" name="email" type="email" placeholder=" " />
                             <div class="cut cut-short"></div>
                             <label for="email" class="placeholder">Email</>
                             </div>
@@ -103,13 +103,13 @@
                             </div>
 
                             <div class="input-container ic1">
-                                <input id="time" class="input" name="time" type="time" placeholder=" " />
+                                <input id="time" class="input" name="time" type="time" placeholder=" "  />
                                 <div class="cut long"></div>
                                 <label for="time" class="placeholder">Time</label>
                             </div>
 
                             <div class="input-container ic2">
-                                <input id="number" class="input" name="number" type="text" placeholder=" " />
+                                <input id="number" class="input" name="number" type="number" placeholder=" " />
                                 <div class="cut longer"></div>
                                 <label for="number" class="placeholder">Phone Number</label>
                             </div>
@@ -395,28 +395,45 @@
 
 
                 // Get the appointment date from the form
+                const appointmentTimeInput = document.getElementById('time');
                 const appointmentDateInput = document.getElementById('appointment_date');
+               
                 const formattedDate = formatDate(appointmentDateInput.value);
                 appointmentDateInput.type = 'text';
                 appointmentDateInput.value = formattedDate;
-                console.log("HIIIIIIII")
 
-                
+                const timeValue = appointmentTimeInput.value;
+                console.log("Time input:", timeValue); // Debugging
 
-                const serviceID = 'service_so85fc4';
-                const templateID = 'template_g1kw3e4';
 
-                emailjs.sendForm(serviceID, templateID, booking_form)
-                
-                .then(() => {
-                    booking_btn.value = 'Send Email';
-                    alert('Sent!');
-                    booking_form.reset();
+                if(formattedDate == "undefined, NaNth of undefined NaN"){
+
+                    alert("Please select a date for your appointment.")
                     appointmentDateInput.type = 'date';
-                    }, (err) => {
-                    booking_btn.value = 'Send Email';
-                    alert('Failed to send: ' + JSON.stringify(err));
-                });
+                }
+                else if(timeValue === ""){
+                    alert("Please select a time for your appointment.");
+                    appointmentDateInput.type = 'date';
+                    booking_form.reset();
+                }
+                else{
+                    const serviceID = 'service_so85fc4';
+                    const templateID = 'template_g1kw3e4';
+
+                    emailjs.sendForm(serviceID, templateID, booking_form)
+                    .then(() => {
+                        booking_btn.value = 'Send Email';
+                        alert('Sent!');
+                        booking_form.reset();
+                        appointmentDateInput.type = 'date';
+                        }, (err) => {
+                        booking_btn.value = 'Send Email';
+                        alert('Failed to send: ' + JSON.stringify(err));
+                    });
+                }
+
+
+            
             });
 
         </script>
