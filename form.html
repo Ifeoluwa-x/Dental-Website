@@ -26,7 +26,18 @@
 </script>
 </head>
     <body>
+        
         <main>
+            <div id="alertBox" class="alert" style="display: none;">
+                <div class="alert-icon">
+                    <span class="material-symbols-outlined">
+                        info
+                    </span>
+                </div>
+                <div class="alert-text">
+                    Add Your Custom Message Here
+                </div>
+            </div>
             <header>
                 <div class="number">
                     <p>
@@ -361,6 +372,8 @@
             const booking_btn = document.getElementById('book_button');
             const booking_form = document.getElementById('book_form');
 
+            
+
             // Function to format the date
             function formatDate(dateString) {
                 const date = new Date(dateString + "T00:00:00");
@@ -397,7 +410,11 @@
                 // Get the appointment date from the form
                 const appointmentTimeInput = document.getElementById('time');
                 const appointmentDateInput = document.getElementById('appointment_date');
+
+                //
+                const alertBox = document.getElementById('alertBox');
                
+
                 const formattedDate = formatDate(appointmentDateInput.value);
                 appointmentDateInput.type = 'text';
                 appointmentDateInput.value = formattedDate;
@@ -423,7 +440,14 @@
                     emailjs.sendForm(serviceID, templateID, booking_form)
                     .then(() => {
                         booking_btn.value = 'Send Email';
-                        alert('Sent!');
+                        var alertTextDiv = document.querySelector('.alert-text');
+                        alertTextDiv.textContent = 'Dental Appointment Succefully Booked';
+                        alertBox.classList.add('alert-success'); // Add the alert-error class
+                        alertBox.style.display = "flex"; // Show the alert box
+
+                        setTimeout(() => {
+                            alertBox.style.display = "none"; // Hide the alert box after 4 seconds
+                        }, 4000);
                         booking_form.reset();
                         appointmentDateInput.type = 'date';
                         }, (err) => {

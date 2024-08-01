@@ -27,6 +27,16 @@
 </head>
     <body>
         <main>
+            <div id="alertBox" class="alert" style="display: none;">
+                <div class="alert-icon">
+                    <span class="material-symbols-outlined">
+                        info
+                    </span>
+                </div>
+                <div class="alert-text">
+                    Add Your Custom Message Here
+                </div>
+            </div>
             <header>
                 <div class="number">
                     <p>
@@ -359,6 +369,13 @@
             form.addEventListener('submit', function(event) {
             event.preventDefault();
 
+
+            //
+            const alertBox = document.getElementById('alertBox');
+            const showAlertBtn = document.getElementById('showAlertBtn');
+
+
+
             btn.value = 'Sending...';
 
             const serviceID = 'service_0c46sq8';
@@ -367,7 +384,14 @@
             emailjs.sendForm(serviceID, templateID, this)
                 .then(() => {
                 btn.value = 'Send Email';
-                alert('Sent!');
+                var alertTextDiv = document.querySelector('.alert-text');
+                alertTextDiv.textContent = 'You Have Successfully Suscribed To Our News Letters';
+                alertBox.classList.add('alert-success'); // Add the alert-error class
+                alertBox.style.display = "flex"; // Show the alert box
+
+                setTimeout(() => {
+                    alertBox.style.display = "none"; // Hide the alert box after 4 seconds
+                }, 4000);
                 form.reset();
                 
                 }, (err) => {
