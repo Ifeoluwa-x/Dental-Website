@@ -156,7 +156,7 @@ ul li {
     top: 65px;
     width: 200px;
     height: 0;
-    background-color: rgb(255, 255, 255, 0.1);
+    background-color: blueviolet;
     backdrop-filter: blur(15px);
     border-radius: 2px;
     overflow: hidden;
